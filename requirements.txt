@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+plotly
+openpyxl
+pydeck
+scikit-learn
+wordcloud
+nltk
+lightgbm
+pytorch
+pickle
+joblib
