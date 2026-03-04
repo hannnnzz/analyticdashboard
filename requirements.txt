@@ -8,5 +8,5 @@ scikit-learn
 wordcloud
 nltk
 lightgbm
-pytorch
+torch
 joblib
