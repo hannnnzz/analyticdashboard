@@ -9,5 +9,4 @@ wordcloud
 nltk
 lightgbm
 pytorch
-pickle
 joblib
