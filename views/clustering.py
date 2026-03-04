@@ -119,7 +119,7 @@ def render(df_user, kmeans_model=None, scaler=None, df_edges=None):
     with tab1:
         c1, c2 = st.columns(2)
         with c1:
-            section_label("Distribusi Segment")
+            section_label("Segment Distribution")
             seg_counts = df["segment_label"].value_counts().reset_index()
             seg_counts.columns = ["segment", "count"]
             fig = go.Figure(go.Pie(
@@ -132,7 +132,7 @@ def render(df_user, kmeans_model=None, scaler=None, df_edges=None):
             st.plotly_chart(style_fig(fig, height=380), use_container_width=True)
 
         with c2:
-            section_label("Jumlah User per KMeans Cluster")
+            section_label("Number of Users per KMeans Cluster")
             km_counts = df["KMeans_Cluster"].value_counts().reset_index()
             km_counts.columns = ["cluster_id", "count"]
             km_counts["label"] = km_counts["cluster_id"].map(CLUSTER_MAPPING).fillna(km_counts["cluster_id"].astype(str))
@@ -201,7 +201,7 @@ def render(df_user, kmeans_model=None, scaler=None, df_edges=None):
                 hovertemplate="<b>%{y}</b><br>Avg: %{x:.2f}<extra></extra>",
             ))
             fig2.update_layout(
-                title=f"Avg {FEATURE_LABELS.get(feat_sel, feat_sel)} per Segment",
+                title=f" ",
                 xaxis=dict(title=" ", gridcolor=GRID_COLOR),
                 yaxis=dict(title=" "), showlegend=False,
             )
