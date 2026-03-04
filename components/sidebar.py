@@ -46,6 +46,7 @@ def render_sidebar(df_business, df_exploded, df_review=None, df_user=None, df_ch
             df  = df[df["RestaurantsPriceRange2_num"].isin(selected_tier_nums)]
             dfx = dfx[dfx["business_id"].isin(df["business_id"])]
 
+    st.sidebar.markdown("---")
     st.sidebar.caption("Pilih dahulu kategori untuk memperinci Nama Bisnis.")
 
     # ── Categories ────────────────────────────────────────────────────────
