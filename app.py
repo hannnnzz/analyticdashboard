@@ -1,7 +1,7 @@
 import streamlit as st
 import plotly.express as px
 
-st.set_page_config(page_title="Analytics Dashboard", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Analytics Dashboard", page_icon"💡", layout="wide", initial_sidebar_state="expanded")
 
 from data.loader_business import load_business, explode_categories
 from data.loader_review import load_review
